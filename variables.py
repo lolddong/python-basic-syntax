@@ -8,12 +8,12 @@ a = 1
 b = '1'
 
 # print는 실행 후 결과값을 가시적으로 보여주기 위해 터미널 창에 출력하는 것
-# print(a)
-# print(b)
+print(a)
+print(b)
 
 # 아래 뜻은 '새로운 a' 값에 "'원래 a' 값 더하기 1" 값을 넣겠다는 뜻이다
-# a = a + 1
-# print(a)
+a = a + 1
+print(a)
 
 # 변수 자료형 출력해보기
 print(type(a))
