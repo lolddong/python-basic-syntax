@@ -155,6 +155,17 @@
 # print("ID는 " + myId + "이고 " + "비밀번호는 " + myPw + "입니다.")
 
 # 문자열 대체: replace()
-a = "I studied python"
-print(a.replace("python", "java"))
-print(a.replace("I", "My friend"))
+# a = "I studied python"
+# print(a.replace("python", "java"))
+# print(a.replace("I", "My friend"))
+
+# 문자열 쪼개기 / 공백을 기준으로 문자를 자르는 함수: split()
+# a = "I studied python."
+# b = a.split(" ")
+# print(b) # ['I', 'studied', 'python.']
+
+# a = "I     studied      python."
+# b = a.split(" ")
+# c = a.split()
+# print(b) # ['I', '', '', '', '', 'studied', '', '', '', '', '', 'python.']
+# print(c) # ['I', 'studied', 'python.']
