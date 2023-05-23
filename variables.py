@@ -167,5 +167,17 @@
 # a = "I     studied      python."
 # b = a.split(" ")
 # c = a.split()
-# print(b) # ['I', '', '', '', '', 'studied', '', '', '', '', '', 'python.']
-# print(c) # ['I', 'studied', 'python.']
+# print(b) >> ['I', '', '', '', '', 'studied', '', '', '', '', '', 'python.']
+# print(c) >> ['I', 'studied', 'python.']
+
+a = "I:studied:python."
+b = a.split(":")
+print(b)
+
+# 연습문제(숫자형)_교제
+# 아래와 같은 2차 방정식을 파이썬 수식으로 코딩하고 y의 결과를 출력
+# y = 2.5 * x^2 + 3.3 * x + 6
+# 출력화면
+x = int(input("x값을 입력해주세요"))
+y = 2.5 * pow(x, 2) + 3.3 * x + 6
+print(y)
