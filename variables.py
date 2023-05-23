@@ -15,7 +15,7 @@ print(b)
 a = a + 1
 print(a)
 
-# 변수 자료형 출력해보기
+# 변수 자료형 출력해보기  
 print(type(a))
 print(type(b))
 
