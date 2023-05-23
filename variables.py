@@ -101,7 +101,7 @@
 # 문자열 포맷팅이란 문자열 중간에 특정 문자 (또는 숫자 등)를 삽입하는 방식
 # 포맷팅 쓰는 이유: 문자열을 직접 삽입하면 1회성으로 coding할 수 박에 없지만, 포맷팅은 변수값을 삽입할 수 있다; 따움표를 여러번 안 닫아도 된다
 # %s: 문자열, %d: 정수 (d = digit), %f: 실수
-# 함수 input() 은 그 값은 str(문자) 값이 된다; 그러므로 %d나 %f로 형변화 시켜줘야 된다 -> int() 아니면 float()
+# 함수 input() 의 값은 항상 str(문자) 값이 된다; 그러므로 %d나 %f로 형변화 시켜줘야 된다 -> int() 아니면 float()
 # language = input("좋아하는 언어를 입력하세요.")
 # times = input("그 언어를 몇 번이나 공부하셨나요?")
 # a = "I studeid %s very hard %d times." % (language, int(times))
@@ -114,7 +114,47 @@
 # 연습문제
 # 나이가 몇 살이신가요? 해서 나이를 받고, 몸무게가 몇 킬로그램이신가요? 해서 weight 받고, My age is %d, and weight is %f kg
 # 위 문자열을 포맷팅을 통해 사용자의 입력값에 따라 달라지도록 만들고 그 결과값을 출력
-age = input("나이가 몇 살이신가요?")
-weight = input("몸무게가 몇 킬로그램이신가요?")
-a = "My age is %d, and weight is %f kg." % (int(age), float(weight))
-print(a)
+# age = input("나이가 몇 살이신가요?")
+# age = int(input("나이가 몇 살이신가요?")) <- 여기다가 정수변환 해도 됨
+# weight = input("몸무게가 몇 킬로그램이신가요?")
+# weight = float(input("몸무게가 몇 킬로그램이신가요?")) <- 여기다가 실수변환 해도 됨
+# a = "My age is %d, and weight is %f kg." % (int(age), float(weight))
+# print(a)
+
+# 문자열 관련 주요 함수
+# count: 대상 문자열에 지정한 문자가 몇개가 있는지 출력하는 함수
+# a = "python"
+# print(a.count('o'))
+# find: 대상 문자열에서 지정한 문자가 몇 번째 index에 있는지 출력하는 함수
+# index: find와 같은 기능
+# print(a.find('o'))
+# print(a.index('o'))
+# 없는 문자를 찾을 때에는 -1 return한다
+# print(a.find('x'))
+
+# whatyouwant = input("아무런 문자나 입혁해주세요")
+# search = input("찾고자 하는 문자 1개만 입력해주세요")
+# result = whatyouwant.find(search)
+# if result == -1:
+    # print("찾고자 하는 값이 없습니다.")
+# else:
+    # print("요청하신 문자는 %d 번째에 있습니다." % result)
+
+# 대소문자 변경: upper() / lower()
+# a = "hello"
+# print(a.upper())
+# b = "HELLO"
+# print(a.lower())
+
+# 문자열 양쪽 공백을 없애는 함수: strip()
+# a = "     hello world      "
+# print(a.strip())
+
+# myId = (input("id를 입력해주세요")).strip()
+# myPw = input("비밀번호를 입력해주세요")
+# print("ID는 " + myId + "이고 " + "비밀번호는 " + myPw + "입니다.")
+
+# 문자열 대체: replace()
+a = "I studied python"
+print(a.replace("python", "java"))
+print(a.replace("I", "My friend"))
