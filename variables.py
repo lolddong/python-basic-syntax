@@ -16,17 +16,20 @@
 # print(a)
 
 # 변수 자료형 출력해보기  
+# a = 1
+# b = True
+# c = 2.3
 # print(type(a))
 # print(type(b))
-
-# c = 2.1
 # print(type(c))
 
 # 문자 자료형 출력해보기
 # x = "a"
 # print(ord(x))
+# >> 97
 # y = "A"
 # print(ord(y))
+# >> 65
 
 # multi line으로 문자열을 표현하고 싶으면 쌍따음표/홑따음표 3개를 사용하면 된다.
 # a = """hello
@@ -75,14 +78,16 @@
 # 문자열의 슬라이싱: 슬라이싱이란 문자열을 잘라내는 것
 
 # 대상변수[x:y] -> x이상 y미만의 index를 가진 문자열을 잘라낸다
-# a = "python is fun"
+a = "python is fun"
 # python만 잘라내서 b에 담아 출력
 # b = a[0:6]
 # print(b)
+# >> python
 # x, y 자리에 값이 없으면 처음부터 또는 끝까지를 의미
 # 6번째 문자부터 끝까지 잘라내서 변수 b에 담아 출력
-# b = a[6:]
-# print(b)
+b = a[6:]
+print(b)
+# 
 
 # a[x:y:z] 여기에서 z는 z-1 개씩 건너뛰고
 # 2번째 이상 7번째 미만 문자열 중에 1개씩 건너뛰고 b에 담아 출력
@@ -162,22 +167,36 @@
 # 문자열 쪼개기 / 공백을 기준으로 문자를 자르는 함수: split()
 # a = "I studied python."
 # b = a.split(" ")
-# print(b) # ['I', 'studied', 'python.']
+# print(b)
+# >> ['I', 'studied', 'python.']
 
 # a = "I     studied      python."
 # b = a.split(" ")
 # c = a.split()
-# print(b) >> ['I', '', '', '', '', 'studied', '', '', '', '', '', 'python.']
-# print(c) >> ['I', 'studied', 'python.']
+# print(b) 
+# >> ['I', '', '', '', '', 'studied', '', '', '', '', '', 'python.']
+# print(c) 
+# >> ['I', 'studied', 'python.']
 
-a = "I:studied:python."
-b = a.split(":")
-print(b)
+# a = "I:studied:python."
+# b = a.split(":")
+# print(b) 
+# >> ['I', 'studied', 'python.']
 
 # 연습문제(숫자형)_교제
 # 아래와 같은 2차 방정식을 파이썬 수식으로 코딩하고 y의 결과를 출력
 # y = 2.5 * x^2 + 3.3 * x + 6
 # 출력화면
-x = int(input("x값을 입력해주세요"))
-y = 2.5 * pow(x, 2) + 3.3 * x + 6
-print(y)
+# x = int(input("x값을 입력해주세요"))
+# y = 2.5 * pow(x, 2) + 3.3 * x + 6
+# print(y)
+
+# 3개의 단어를 키보드로 입력 받아 각 단어의 첫글자를 추출 후 단어의 약자를 출력
+# <조건1> 각 단어 변수 (word1, word2, word3)
+# <조건2> 입력과 출력 구분선: 문자열 연산
+# <조건3> 각 변수의 첫 단어만 추출하여 변수(abbr) 저장
+# word1 = input("첫번째 단어를 입력해주세요.")
+# word2 = input("두번째 단어를 입력해주세요.")
+# word3 = input("세번째 단어를 입력해주세요.")
+# print(word1[0] + word2[0] + word3[0]) 
+# >> Korea, Busan, Kangnam 라고 입력했을 때 >> KBK
