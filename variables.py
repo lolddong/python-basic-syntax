@@ -78,16 +78,16 @@
 # 문자열의 슬라이싱: 슬라이싱이란 문자열을 잘라내는 것
 
 # 대상변수[x:y] -> x이상 y미만의 index를 가진 문자열을 잘라낸다
-a = "python is fun"
+# a = "python is fun"
 # python만 잘라내서 b에 담아 출력
 # b = a[0:6]
 # print(b)
 # >> python
 # x, y 자리에 값이 없으면 처음부터 또는 끝까지를 의미
 # 6번째 문자부터 끝까지 잘라내서 변수 b에 담아 출력
-b = a[6:]
-print(b)
-# 
+# b = a[6:]
+# print(b)
+# >> is fun
 
 # a[x:y:z] 여기에서 z는 z-1 개씩 건너뛰고
 # 2번째 이상 7번째 미만 문자열 중에 1개씩 건너뛰고 b에 담아 출력
@@ -99,13 +99,15 @@ print(b)
 # date = a[0:8]
 # day = a[8:]
 # print(date)
+# >> 20220505
 # print(day)
+# >> children's_day
 
 # 문자열 포맷팅
 
 # 문자열 포맷팅이란 문자열 중간에 특정 문자 (또는 숫자 등)를 삽입하는 방식
 # 포맷팅 쓰는 이유: 문자열을 직접 삽입하면 1회성으로 coding할 수 박에 없지만, 포맷팅은 변수값을 삽입할 수 있다; 따움표를 여러번 안 닫아도 된다
-# %s: 문자열, %d: 정수 (d = digit), %f: 실수
+# %s: 문자열, %d: 정수 (d = decimal), %f: 실수
 # 함수 input() 의 값은 항상 str(문자) 값이 된다; 그러므로 %d나 %f로 형변화 시켜줘야 된다 -> int() 아니면 float()
 # language = input("좋아하는 언어를 입력하세요.")
 # times = input("그 언어를 몇 번이나 공부하셨나요?")
@@ -128,14 +130,15 @@ print(b)
 
 # 문자열 관련 주요 함수
 # count: 대상 문자열에 지정한 문자가 몇개가 있는지 출력하는 함수
-# a = "python"
-# print(a.count('o'))
+#   a = "python"
+#   print(a.count('o'))
 # find: 대상 문자열에서 지정한 문자가 몇 번째 index에 있는지 출력하는 함수
 # index: find와 같은 기능
-# print(a.find('o'))
-# print(a.index('o'))
+#   print(a.find('o'))
+#   print(a.index('o'))
 # 없는 문자를 찾을 때에는 -1 return한다
 # print(a.find('x'))
+# >> -1
 
 # whatyouwant = input("아무런 문자나 입혁해주세요")
 # search = input("찾고자 하는 문자 1개만 입력해주세요")
