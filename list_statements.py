@@ -86,9 +86,9 @@
             # >> [1, 19]
     # list.remove(값)
         # 리스트 a = [1, 3, 5, 7, 9, 10] 에서 2번째 값 (3)을 삭제하라
-            # a = [1, 3, 5, 7, 9, 10]
-            # a.remove(3)
-            # print(a)
+a = [1, 3, 5, 7, 9, 10]
+a.remove(3)
+print(a)
             # >> [1, 5, 7, 9, 10]
     # 연습문제
         # 특정한 9라는 값을 모두 제거하기
@@ -170,10 +170,11 @@
         # >> 7
 # list <-> 문자열 만들기
     # 문자 list를 문자열로 만들기
-lista = ["hello", "world", "python"]
-st1 = " "
-st2 = st1.join(lista)
-print(st2)
+        # lista = ["hello", "world", "python"]
+        # st1 = " "
+        # st2 = st1.join(lista)
+        # print(st2)
+        # >> hello world python
     # 문자열을 문자 list로 만들기
         # list()
             # sta1 = "hello world python"
