@@ -86,9 +86,9 @@
             # >> [1, 19]
     # list.remove(값)
         # 리스트 a = [1, 3, 5, 7, 9, 10] 에서 2번째 값 (3)을 삭제하라
-a = [1, 3, 5, 7, 9, 10]
-a.remove(3)
-print(a)
+            # a = [1, 3, 5, 7, 9, 10]
+            # a.remove(3)
+            # print(a)
             # >> [1, 5, 7, 9, 10]
     # 연습문제
         # 특정한 9라는 값을 모두 제거하기
@@ -129,7 +129,7 @@ print(a)
             # listb.append(listc)
             # print(lista)
             # >> [1, 2, 3, ['a', 'b', 10]]
-    # list.insert() - 위치를 지정하여 추가
+    # list.insert(index, value) - 위치를 지정하여 추가
         # vowel = ['a', 'e', 'i', 'u']
         # 'o'를 index 3 (4번째 자리에 추가하기)
         # vowel.insert(3, 'o')
@@ -138,7 +138,7 @@ print(a)
     # list.extend() - iterable 객체를 list에 추가할 때 사용 - 각 요소를 꺼내어 맨 뒤에 추가
         # lista = [1, 2, 3]
         # listb = [10, 20, 30]
-        # lista.append(listb)
+        # lista.extend(listb)
         # print(lista)
         # >> [1, 2, 3, 10, 20, 30]
 # list 정렬
@@ -150,7 +150,7 @@ print(a)
         # chlist = ['brad', 'john', 'anna']
         # chlist.sort()
         # print(chlist)
-    # list.sort() reverse = True 하면 내림차순 정렬
+    # list.sort(reverse = True) - 내림차순 정렬
 # list 뒤집기
     # list.reverse()
         # chlist = ['brad', 'john', 'anna']
@@ -168,13 +168,16 @@ print(a)
         # lastValue = lista.pop()
         # print(lastValue)
         # >> 7
+        # print(lista)
+        # >> [1, 2, 3, 4, 5, 6]
 # list <-> 문자열 만들기
     # 문자 list를 문자열로 만들기
-        # lista = ["hello", "world", "python"]
-        # st1 = " "
-        # st2 = st1.join(lista)
-        # print(st2)
-        # >> hello world python
+        # str.join(list)
+            # lista = ["hello", "world", "python"]
+            # st1 = " "
+            # st2 = st1.join(lista)
+            # print(st2)
+            # >> hello world python
     # 문자열을 문자 list로 만들기
         # list()
             # sta1 = "hello world python"
@@ -184,3 +187,9 @@ print(a)
             # sta1 = "hello world python" 
             # print(sta1.split())
             # >> ['hello', 'world', 'python']
+
+lista = ["hello", "world", "python"]
+st1 = ""
+st2 = st1.join(lista)
+print(st2)
+            # >> hello world python
