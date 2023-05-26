@@ -227,3 +227,41 @@
             # lista.sort()
             # print(lista[0])
             # >> 5
+# list 만들기
+    # list comprehension - 장점: 간결하다
+        # lista = [변수 for 변수 in range(숫자)]
+            # 예)
+                # lista = [a*2 for a in range(10)]
+                # print(lista)
+                # >>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    # (lista에 0-9까지 담는 방법)
+        # 방법 1
+            # lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        # 방법 2
+            # lista = list(range(10))
+            # print(lista)
+            # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        # 방법 3
+            # lista = []
+            # for a in range(10):
+            #     lista.append(a)
+            # print(lista)
+            # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        # 방법 4 - list comprehension
+            # lista = [a for a in range(10)]
+            # print(lista)
+            # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# lista = []
+# for a in range(10):
+#     if a%2 == 0:
+#         lista.append(a)
+#     else:
+#         lista.append(a*2)
+# print(lista)
+
+lista = []
+for a in range(10):
+    if a%2 != 0:
+        lista.append(a*2)
+print(lista)
