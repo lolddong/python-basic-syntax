@@ -40,35 +40,76 @@
     # 1111 | 1000 => 1111
 
 # 대입 연산자
+    # += -= /= *= 
     # a = 10
     # a += 1        # a = a + 1 과 동일
     # print(a)
     # >> 11
     # print(a += 1)
     # >> SyntaxError: invalid syntax
-    # -= /= *= 도 동일
 
 # 비교 연산자
     # chaining (범위 표현 가능, 몇 다른 언어에서는 표현 불가능)
         # 5 < a < 100       # a > 5 and 100 < a 와 동일
-a = 10
-if 5 < a < 100:
-    print("참입니다.")
+            # a = 10
+            # if 5 < a < 100:
+            #     print("참입니다.")
+            # >> 참입니다.
 
-# for문의 기본 구조
-#   for 변수 in 반복가능한자료형(iterable): #예) list, cell, etc.
-#       실행문
-# 예)
-    # lista = [10, 20, 30]
-    # for 변수 in lista:
-    #     print(변수)
-    #     >> 10
-    #     >> 20
-    #     >> 30
-    # for a in [1, 3, 10]:
-    #     print (a)
+# 삼항 연산자
+    # 간단한 식으로 표현
+    # 먼저, if문의 실행문을 if문 앞으로, ':'을 빼고 한줄로 표현
+    # 실행문을 실행하기 위한 사용 보단 참인 경우 어떤 값, 거짓인 경우 어떤값을 쉽게 result에 담기 위해 사용
+        # a = 10
+        # print("a는 10보다 큽니다.") if a > 10 else print("a는 10보다 작습니다.")
+        # >> a는 10보다 작습니다.
+        # result = 'a는 10보다 큼' if a > 10 else 'a는 10보다 작음'
+        # print(result)
+        # >> a는 10보다 작음
 
-    # range 문법: range(x, y) x 이상 y 미만
-    # for a in range(1, 101):
-        # print(a)
+# if문 한 줄로 쓰기
+    # 코드가 짧고 단순한 경우에 아래와 같이 한줄로 쓰기 권장
+    # 두줄 이상의 코드를 한줄로 적고 싶으면 ; 로 구분
+        # a = 10
+        # if a > 1: print("a는 1보다 큽니다"); print("a는 1보다 큽니다..!")
+        # >> a는 1보다 큽니다
+        #    a는 1보다 큽니다..!
 
+# f formating
+    # {} 안에 변수값이 들어감
+        # print(f"짐의 무게는 {weight}kg이며 수수료는 {cost}입니다.")
+
+# 연습문제
+    # 항공사에서는 짐을 부칠 때 10kg 이상부터 수수료를 낸다. 
+    # 수수료는 10의 배수 단위로 10000원씩 증가한다. 
+    # 만약 10kg 미만이면 수수료는 없다.
+    # 사용자의 짐의 무게를 키보드로 입력 받고, 사용자가 지불하여야 할 금액을 계산하는 프로그램을 작성하라.
+    # 결과화면 예시
+    # 짐의 무게는 얼마입니까? 21
+    # 짐의 무게는 21kg이며 수수료는 20000입니다.
+        # weight = float(input("짐의 무게는 얼마입니까?"))
+        # if weight < 1:
+        #     cost = 0
+        # else:
+        #     cost = weight//10 * 10000
+        # answer = "짐의 무게는 %dkg이며 수수료는 %d입니다." % (weight, cost)
+        # print(answer)
+# 연습문제
+    # 돈이 만원 이상 있고 배가 고프면 "저녁을 사먹으시오" 출력
+    # 그렇지 않으면 "집에 가시오" 출력
+    # input값으로 가진 돈과 배가 고픈지 여부를 받아서 처리
+        # money = int(input("돈이 얼마 있습니까?"))
+        # hungryOrNot = input("배가 고프십니까? 응 또는 아니로 대답해주세요.")
+        # if money >= 10000 and hungryOrNot == '응':
+        #     print("저녁을 사먹으시오.")
+        # else:
+        #     print("집에 가세요.")
+
+
+weight = float(input("짐의 무게는 얼마입니까?"))
+if weight < 10:
+    cost = 0
+else:
+    cost = weight//10 * 10000
+answer = "짐의 무게는 %fkg이며 수수료는 %d입니다." % (weight, cost)
+print(answer)
