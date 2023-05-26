@@ -156,10 +156,7 @@
         # chlist = ['brad', 'john', 'anna']
         # chlist.reverse()
         # print(chlist)
-
-chlist = ['brad', 'john', 'anna']
-chlist.reverse()
-print(chlist)
+        # >> ['anna', 'john', 'brad']
 # list 위치반환
     # list.index(값)
         # lista = ['안','녕','히','가']

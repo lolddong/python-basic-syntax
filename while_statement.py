@@ -1,0 +1,94 @@
+# while문 - 조건문이 참인 경우 반복; 무한반복이 기본전제
+    # 조건을 확인 후 True이면 실행문을 1회 실행시키고 다시 조건을 확인하러 돌아온다.
+    # 그리고 True이면 또 다기 실행한다.
+    # 그러다 조건이 False가 되면 while문 종료
+
+# 기본구조
+    # listA = [1, 2, 3]
+    # while listA:
+        # print("참입니다.")
+        # >> 무한반복!!!
+    
+#무한반복 멈추기
+    # Ctrl + C - 프로그램을 멈춤
+    # 조건 걸어주기
+        # a = 0
+        # while a < 5:
+        #     print(str(a) + "번 무한반복")
+        #     a += 1                            # 조건!
+        # >>  0번 무한반복
+        #     1번 무한반복
+        #     2번 무한반복
+        #     3번 무한반복
+        #     4번 무한반복
+    # .pop()
+        # listA = [1, 2, 3]
+        # while listA:
+        #    print("참입니다.")
+        #    listA.pop()
+        # >> 참입니다.
+        #    참입니다.
+        #    참입니다.
+    # break
+        # if문을 써서 어떠한 조건에 break
+# continue - 이 구문을 만나면, 다시 반복문 조건으로 이동
+
+# 연습 문제
+    # 1 - 1000까지 출력
+        # a = 1
+        # while a < 1001:
+        #     print(str(a) + "번 무한반복")
+        #     a += 1
+    # 1-1000까지 모두 더한 값과 평균 출력
+        # sum = 0
+        # a = 1
+        # while a < 1001:
+        #     sum += a
+        #     a += 1
+        # print(sum, sum/1000)
+        # >> 500500 500.5
+    # 위 문제를 while문에서 반복 진행하다가 if문 써서 어떠한 조건에서 break
+        # a = 1
+        # sum = 0
+        # while True:
+        #     sum += a
+        #     a += 1
+        #     if a == 1001:
+        #         break
+        # print(sum)
+        # >> 500500
+    # 1-1000 중 홀수만 더해서 출력
+        # a = 0
+        # sum = 0
+        # while a < 1000:
+        #     a += 1
+        #     if a%2 != 0:
+        #         sum += a
+        # print(sum)
+        # >> 250000
+    # 위 문제를 continue 활영해서 출력
+        # sum = 0
+        # a = 0
+        # while a < 1000:
+        #     a += 1
+        #     if a%2 == 0:
+        #         continue
+        #     sum += a
+        # print(sum)
+        # >> 250000
+    # 각도 검사기
+        #
+while True:
+    num1 = int(input("1-180까지 입력해주세요."))
+    if num1 > 180:          
+        print("잘못된 값입니다.")
+        continue          # 불필요한 로직을 수행하지 않고 다시 조건으로 이동할 수 있게 해준다(검수 불필요한 값을 앞에서 걸러버린다)
+    elif num1 < 90:
+        print("예각입니다.")
+    elif 90 == num1:
+        print("정각입니다.")
+    elif 90 < num1 < 180:
+        print("둔각입니다.")
+    elif num1 == 180:
+        print("평각입니다.")
+    
