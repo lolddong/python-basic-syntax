@@ -156,6 +156,10 @@
         # chlist = ['brad', 'john', 'anna']
         # chlist.reverse()
         # print(chlist)
+
+chlist = ['brad', 'john', 'anna']
+chlist.reverse()
+print(chlist)
 # list 위치반환
     # list.index(값)
         # lista = ['안','녕','히','가']
@@ -198,13 +202,15 @@
             # print(maxA)
             # >> 100
         # max(list)
-lista = [100, 20, 30, 5, 90]
-maxA = max(lista)
-print(maxA)
+            # lista = [100, 20, 30, 5, 90]
+            # maxA = max(lista)
+            # print(maxA)
+            # >> 100
         # list.sort()로 구하기
             # lista = [100, 20, 30, 5, 90]
             # lista.sort()
             # print(lista[-1])
+            # >> 100
     # 최소값
         # for문으로 구하기
             # lista = [100, 20, 30, 5, 90]
@@ -215,10 +221,16 @@ print(maxA)
             # print(minA)
             # >> 5
         # min(list)
+            # lista = [100, 20, 30, 5, 90]
+            # minA = min(lista)
+            # print(minA)
+            # >> 5
         # list.sort()로 구하기
             # lista = [100, 20, 30, 5, 90]
             # lista.sort()
             # print(lista[0])
+            # >> 5
+
 # while문 
     # 예)
         # listA = [1, 2, 3]
@@ -233,5 +245,3 @@ print(maxA)
             # >>참입니다.
             #   참입니다.
             #   참입니다.
-
-
