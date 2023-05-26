@@ -13,6 +13,13 @@
     #     print (a)
 
 # range 문법: range(x, y) x 이상 y 미만
-    # for a in range(1, 101):
-    #    print(a)
-
+    # iterable한 객체 -> list로 변환 가능
+    # 예)
+        # for a in range(1, 5):
+        #     print(a)
+        # >>  1
+        #     2
+        #     3
+        #     4
+v1 = list(range(1, 5))
+print(v1)

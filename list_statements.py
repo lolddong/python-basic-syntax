@@ -227,18 +227,3 @@
             # lista.sort()
             # print(lista[0])
             # >> 5
-
-# while문 
-    # 예)
-        # listA = [1, 2, 3]
-        # while listA:
-            # print("참입니다.")
-            # >> 무한반복!!!
-    #무한반복 멈추기 - .pop()
-        # listA = [1, 2, 3]
-        # while listA:
-            # print("참입니다.")
-            # listA.pop()
-            # >>참입니다.
-            #   참입니다.
-            #   참입니다.

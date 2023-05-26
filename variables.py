@@ -116,6 +116,7 @@
         # a = "I studied " + language + " very hard " + times + " times."
         # print(a)
     # 종류: %s - 문자열; %d - 정수 (d = decimal); %f - 실수
+
 # 정보 입력 요구
     # input()
         # input()의 값은 항상 str(문자) 값이 된다
@@ -127,10 +128,7 @@
                 # 이때 times의 class는 string
             # a = "I studeid %s very hard %d times." % (language, int(times))
             # print(a)
-language = input("좋아하는 언어를 입력하세요.")
-times = input("그 언어를 몇 번이나 공부하셨나요?")
-a = "I studeid %s very hard %s times." % (language, times)
-print(a)
+
     # 연습문제
         # 나이가 몇 살이신가요? 해서 나이를 받고, 몸무게가 몇 킬로그램이신가요? 해서 weight 받고, My age is %d, and weight is %f kg
         # 위 문자열을 포맷팅을 통해 사용자의 입력값에 따라 달라지도록 만들고 그 결과값을 출력
@@ -209,9 +207,13 @@ print(a)
 
 # 제곱
     # pow(x, y) - x의 y 거듭제곱 (x의 y승) 반환
+        # 먼저 import math 해야됨
+        # 다음 math.pow(x, y)
 
 # 제곱근
     # sqrt(x) - x의 제곱근 (x에 루트를 씌운 값) 반환
+        # 먼저 import math 해야됨
+        # 다음 math.sqrt(x)
 
 # 연습문제(숫자형)_교제
     # 아래와 같은 2차 방정식을 파이썬 수식으로 코딩하고 y의 결과를 출력
