@@ -187,9 +187,51 @@
             # sta1 = "hello world python" 
             # print(sta1.split())
             # >> ['hello', 'world', 'python']
+# 최대값/최소값 구하기
+    # 최대값
+        # for문으로 구하기
+            # lista = [100, 20, 30, 5, 90]
+            # maxA = lista[0]
+            # for a in lista:
+            #     if maxA < a:
+            #         maxA = a
+            # print(maxA)
+            # >> 100
+        # max(list)
+lista = [100, 20, 30, 5, 90]
+maxA = max(lista)
+print(maxA)
+        # list.sort()로 구하기
+            # lista = [100, 20, 30, 5, 90]
+            # lista.sort()
+            # print(lista[-1])
+    # 최소값
+        # for문으로 구하기
+            # lista = [100, 20, 30, 5, 90]
+            # minA = lista[0]
+            # for a in lista:
+            #     if minA > a:
+            #         minA = a
+            # print(minA)
+            # >> 5
+        # min(list)
+        # list.sort()로 구하기
+            # lista = [100, 20, 30, 5, 90]
+            # lista.sort()
+            # print(lista[0])
+# while문 
+    # 예)
+        # listA = [1, 2, 3]
+        # while listA:
+            # print("참입니다.")
+            # >> 무한반복!!!
+    #무한반복 멈추기 - .pop()
+        # listA = [1, 2, 3]
+        # while listA:
+            # print("참입니다.")
+            # listA.pop()
+            # >>참입니다.
+            #   참입니다.
+            #   참입니다.
 
-lista = ["hello", "world", "python"]
-st1 = ""
-st2 = st1.join(lista)
-print(st2)
-            # >> hello world python
+

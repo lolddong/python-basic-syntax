@@ -23,6 +23,14 @@
     # else:
     #     print("걸어가시오.")
 
+    # a = 10
+    # if (a > 5) | (a > 100):       # 반드시 () 해줘야 됨
+    #     print("참입니다.")
+    # >> 참입니다.
+a = 10
+if a > 5 or a > 100:
+    print("참입니다.")
+
 # for문의 기본 구조
 #   for 변수 in 반복가능한자료형(iterable): #예) list, cell, etc.
 #       실행문
@@ -40,5 +48,3 @@
     # for a in range(1, 101):
         # print(a)
 
-for a in [1, 3, 10]:
-    print (a)

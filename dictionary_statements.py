@@ -32,12 +32,28 @@
         # dic1['신분'] = '학생'
         # print(dic1)
         # >> {'이름': '홍길동', '나이': 25, '성별': '남', '신분': '학생'}
+    # dic.items() - key value 쌍 얻기; key value 쌍을 튜플로 묶어 dict개체로 변환
+        # dict = {'이름': '홍길동', '나이': 25, '성별': '남'}
+        # for (x, y) in dict.items():
+        #     print(x, y)
+        # >>  이름 홍길동
+        #     나이 25
+        #     성별 남
 # dic 삭제하기
     # del dic[key]
         # dic1 = {'이름': '홍길동', '나이': 25, '성별': '남'}
         # del dic1['성별']
         # print(dic1)
         # >> {'이름': '홍길동', '나이': 25}
+    # dic.clear() - 모든 item 제거
+        # dic1 = {'이름': '홍길동', '나이': 25, '성별': '남'}
+        # dic1.clear()
+        # print(dic1)
+        # >> {}
+    # dic.pop() - 지정된 Key가 있는 item remove and return
+dic1 = {'이름': '홍길동', '나이': 25, '성별': '남'}
+dic1.pop('나이')
+print(dic1)
 # key 목록 출력
     # dic.keys()
         # dic1 = {'이름': '홍길동', '나이': 25, '성별': '남'}
@@ -89,6 +105,11 @@
         # dic1.update(dic2)
         # print(dic1)
         # >> {'a': 2, 'b': 2, 'c': 3, 'd': 4, 'f': 5}
+# dic 생성
+    # dict() - '='사용, key는 문자열 아님('' 안붙임), value는 class에 따라 붙이거나 안 붙임
+        # dic1 = dict(이름 = '홍길동', 나이 = 25, 성별 = '남')
+        # print(dic1)
+        # >> {'이름': '홍길동', '나이': 25, '성별': '남'}
 
 # 연습문제
     # lista = ['A', 'A', 'B', 'O', 'O', 'AB', 'AB'] 로 dicta = {'A':2, 'B':1, 'O':2, 'AB':2} 출력하기
@@ -143,8 +164,3 @@
             # >> mislav
 
 
-
-listA = [1, 2, 3]
-while listA:
-    print("참입니다.")
-    listA.pop()
