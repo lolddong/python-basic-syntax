@@ -236,13 +236,13 @@
                 # >>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     # (lista에 0-9까지 담는 방법)
-        # 방법 1
+        # 방법 1 - 노가다
             # lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        # 방법 2
+        # 방법 2 - list()
             # lista = list(range(10))
             # print(lista)
             # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        # 방법 3
+        # 방법 3 - list.append()
             # lista = []
             # for a in range(10):
             #     lista.append(a)
@@ -252,16 +252,12 @@
             # lista = [a for a in range(10)]
             # print(lista)
             # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-# lista = []
-# for a in range(10):
-#     if a%2 == 0:
-#         lista.append(a)
-#     else:
-#         lista.append(a*2)
-# print(lista)
-
-lista = []
-for a in range(10):
-    if a%2 != 0:
-        lista.append(a*2)
+    # range(0, 10)에서 홀수값만 2배 한 값만을 담은 리스트를 출력
+        # lista = []
+        # for a in range(10):
+        #     if a%2 != 0:
+        #         lista.append(a*2)
+        # print(lista)
+    # list comprehension 사용하기
+lista = [a*2 for a in range(10) if a % 2 != 0]
 print(lista)

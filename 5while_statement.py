@@ -8,7 +8,13 @@
     # while listA:
         # print("참입니다.")
         # >> 무한반복!!!
-    
+
+# 외우기 (많이 나오는 구조))
+    # a = 0
+    # while a < n: << True면 반복, False면 스톱
+    #     실행문
+    #     a += 1
+
 #무한반복 멈추기
     # Ctrl + C - 프로그램을 멈춤
     # 조건 걸어주기
@@ -98,13 +104,40 @@
     # 나만의 리스트 만들기
         # 리스트의 크기를 키보드로 입력받아 그 크기만큼 임의 숫자를 리스트에 추가하고, 리스트의 크기와 값 전체를 출력하라.
         # 모든 값은 키보드로 입력을 받고, list의 크기 len() 함수를 통해 구하라. 단, 리스트의 크기는 10 이하로 입력하라
-        # 출력화면:
+        # 출력화면 예)
             # 리스트의 크기를 정하세요. 30
             # 리스트의 크기를 10 이하로 다시 할당하세요. 9
             # 리스트에 값을 할당해 보세요. 1
             # 리스트에 값을 할당해 보세요. 2
             # 리스트에 값을 할당해 보세요. 9
             # 크기9의 리스트 ['1', '2', '3', '4', '5', '6', '7', '8', '9'] 가 할당 되었어요
+        # 선생님 방법
+            # while True:
+            #     listSize = int(input("리스트의 크기를 10 이하로 입력하세요."))
+            #     if listSize <= 10:
+            #         a = 0
+            #         lista = []
+            #         while a < listSize:
+            #             listvalue = input("리스트에 값을 할당해 보세요.")
+            #             lista.append(listvalue)
+            #             a += 1
+            #         print(lista)
+            #     else:
+            #         print("입력하신 숫자가 10을 초과합니다.")
+        # 내 방법
+            # while True:
+            #     list = []
+            #     listSize = int(input("리스트의 크기를 10 이하로 입력하세요."))
+            #     if listSize > 10:
+            #         print("입력하신 숫자가 10을 초과합니다.")
+            #         continue
+            #     else:
+            #         for a in range(1, listSize+1):
+            #             if a <= listSize:
+            #                 listvalue = input("리스트에 값을 할당해 보세요.")
+            #                 list.append(listvalue)
+            #         a = f"크기 {listSize}의 리스트 {list}가 할당 되었어요."
+            #         print(a)
     # 로또 번호 생성기
         # 리스트의 크기가 6개인 리스트를 만들어서 오늘의 로또번호를 만들어보자
             # import random
@@ -115,33 +148,17 @@
             #     list.append(random.randint(1, 45))
             #     a += 1
             # print(list)
+# 최대값, 최소값 구하기
+    # 1-100의 정수 중 10개를 뽑아 리스트로 담고 최대값과 최소값을 구하라
+        # import random
+        # lista = []
+        # while len(lista) < 10:
+        #     lista.append(random.randint(1,100))
+        # lista.sort()
+        # max = lista[-1]
+        # min = lista[0]
+        # print(f"Random numbers are {lista}, and the maximum number is {max} while the minimum is {min}.")
 
-# listSize = int(input("리스트의 크기를 10 이하로 입력하세요."))
-# a = 0
-# list = []
-# while True:
-#     if listSize > 10:
-#         print(int(input("리스트의 크기를 10 이하로 다시 입력하세요.")))
-#         continue
-#     else:
-#         for a in range(1, listSize+1):
-#             if a <= listSize:
-#                 listvalue = input("리스트에 값을 할당해 보세요.")
-#                 list.append(listvalue)
-#         a = f"크기 {listSize}의 리스트 {list}가 할당 되었어요."
-#         print(a)
-            
-# 
 
-while True:
-    listSize = int(input("리스트의 크기를 10 이하로 입력하세요."))
-    if listSize <= 10:
-        a = 0
-        lista = []
-        while a < listSize:
-            listvalue = input("리스트에 값을 할당해 보세요.")
-            lista.append(listvalue)
-            a += 1
-        print(lista)
-    else:
-        print("리스트의 크기를 10 이하로 다시 입력하세요.")
+# continue
+# break
