@@ -150,11 +150,26 @@
             # >> [20, 21, 30, 45, 45, 66, 71, 93, 94]
         # 선택정렬 vs. 버블정렬
             # 선택정렬 select-sort - 0번째 index부터 가장 작은 값을 채워나가는 방식
+                # lista = [93, 45, 21, 30, 20, 94, 66, 71, 45]
+                # for a in range(len(lista)-1):                       # 첫번째 for문은 채워나가야 할 index를 의미
+                #     for b in range(a+1, len(lista)):                # 두번째 for문은 비교의 대상이 되는 index를 의미
+                #         if lista[a] > lista[b]:
+                #             lista[a], lista[b] = lista[b], lista[a]
+                #             b+=1
+                # print(lista)
+                # >> [20, 21, 30, 45, 45, 66, 71, 93, 94]
+            # 버블정렬 bubble-sort
 lista = [93, 45, 21, 30, 20, 94, 66, 71, 45]
-for a in range(len(lista)-1):                 # 첫번째 for문은 채워나가야 할 index를 의미
-    for b in range(a+1, len(lista)):             # 두번째 for문은 비교의 대상이 되는 index를 의미
+a = 0
+
+for a in range(len(lista)-1):
+    print(lista)
+    for b in range(a+1, len(lista)):
         if lista[a] > lista[b]:
             lista[a], lista[b] = lista[b], lista[a]
-            b+=1
-print(lista)
-            # 버블정렬
+            a += 1
+            print(lista)
+        else:
+            a = 0
+
+print("finale:", lista)

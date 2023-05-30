@@ -1,3 +1,7 @@
+# 교제추천
+# - 점프 투 파이썬 (온라인 무료, 강사 추천)
+# - TCP School
+
 # 주석
     # # 표시는 프로그래밍에서 주석이라 말한다.
     # 주석은 파이썬의 인터프이터가 인식하지 못하도록 쓰는 기호
@@ -186,9 +190,10 @@
 
 # 문자열 대체
     # st.replace()
-        # a = "I studied python."
-        # print(a.replace("python", "java"))
-        # >> I studied java.
+a = "I studied python."
+print(a.replace("python", "java"))
+print(a)
+# >> I studied java.
 
 # 문자열 쪼개기
     # st.split() - 공백을 기준으로 문자를 자름

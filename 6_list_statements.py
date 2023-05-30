@@ -142,7 +142,7 @@
         # print(lista)
         # >> [1, 2, 3, 10, 20, 30]
 # list 정렬
-    # list.sort() - 오름차순 정렬 - 숫자, 영어, 한국어 다 됨
+    # lst명.sort() - 오름차순 정렬 - 숫자, 영어, 한국어 다 됨
         # numa = [1, 10, 2, 5, 7, 4]
         # numa.sort()
         # print(numa)
@@ -150,7 +150,8 @@
         # chlist = ['brad', 'john', 'anna']
         # chlist.sort()
         # print(chlist)
-    # list.sort(reverse = True) - 내림차순 정렬
+    # lst명.sort(reverse = True) - 내림차순 정렬
+    # list.sort(list명) 도 있음!
 # list 뒤집기
     # list.reverse()
         # chlist = ['brad', 'john', 'anna']
@@ -259,5 +260,5 @@
         #         lista.append(a*2)
         # print(lista)
     # list comprehension 사용하기
-lista = [a*2 for a in range(10) if a % 2 != 0]
-print(lista)
+        # lista = [a*2 for a in range(10) if a % 2 != 0]
+        # print(lista)
