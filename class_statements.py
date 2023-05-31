@@ -158,3 +158,38 @@
 # 현재시간 출력하기
     # import datetime
     # print(datetime.datetime.now())
+
+# 클래스의 상속
+    # 부모 클래스에서의 기능을 자식클래스에서 물려받는 것
+    # class 자식클래스명(부모클래스명) 형식으로 선언
+
+class Calculator:
+    def __init__(self):
+        self.result = 0
+    def plus(self, a):      # 객체를 만들 때 메서드/클래스 내의 첫번째 매개변수(self)는 객체(aCompany, bCompany, etc.)를 의미한다
+        self.result += a    # result와 self.result는 다른 값이다
+    def minus(self, a):
+        self.result -= a
+    def multiply(self, a):
+        self.result *= a
+
+class CalculatorChild(Calculator):      # CalculatorChild는 Calculator의 모든 것을 상속
+    pass
+
+# CalculatorChild가 Calculator의 모든 것을 상속하고 난 후 추가/overriding(덮어쓰기)할 수 있다
+class CalculatorChild(Calculator):
+    def divide(self, a):
+        self.result /= a
+    def multiply(self, a):              # 부모한테 있는 기능을 재선언하게 되면, 부모의 기능보다 자싱의 기능이 우선시되고 이를 overriding이라 한다 (__init__ 도 overriding 하면 됨)
+        self.result *= (a+1)            # overloading이라는 개념도 다른 언어에는 있는데 파이썬에서는 기본구성에 있지 않다
+
+if __name__ == "__main__":              # 자신이 실행 할 때에는 자신이 main이니까 실행, 그러나 다른 코드에서 사용할 때에는 이 if 아래에 있는 코드를 사용하지 않는다
+    print(__name__)                     # >> __main__
+
+if __name__ == "__main__":              # 자신이 실행 할 때에는 자신이 main이니까 실행, 그러나 다른 코드에서 사용할 때에는 이 if 아래에 있는 코드를 사용하지 않는다
+    cc1 = CalculatorChild()
+    cc1.plus(100)
+    print(cc1.result)
+# print(cc1)      # >> 메모리 주소 출력
+# print함수가 속해있는 클래스는 object클래스를 상속 받고 있다.
+# 그런데, object클래스 안에는 list, dict같은 파이썬에서 자주 사용되는 객체값을 value형식으로 출력해주는 함수가 내장돼있다.

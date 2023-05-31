@@ -119,7 +119,7 @@
             # print(cal(2, 1, 'minus'))
         # 곱하기한 값 출력
             # print(cal(2, 2, 'multiply'))
-# 함수에서 default값 미리 세팅
+# 함수에서 default(초기값) 미리 세팅
         # def cal(a, b, c = 'plus'):          # c 옵션을 미리 세팅하면 c 값이 input 안됐을 때 default로 'plus'가 됨
         #         if c == 'plus':
         #             result = a + b
@@ -131,6 +131,8 @@
 
         # print(cal(1, 2))
         # >> 3
+    # 초기값(default)의 자리 순서를 꼭 맞춰야 할까?
+        # 아니다. key value를 호출하는 것처럼 아래와 같이 하면 된다 (예) print(n, end = ' '))
 # 매개변수의 순서를 안맞추고도 원하는 매개변수 자리에 값을 넣어 함수를 호출하는 방법
         # def whoAreYou(name, age, gender):
         #     print(f"제 이름은 {name}이고, 나이는 {age}, 성별은 {gender}입니다.")
@@ -209,7 +211,7 @@
 
 # 변수의 효력 범위 - pythontutor.com
     # 메모리구조
-        # 데이터 영역 - 전역 변수
+        # 데이터/메소드 영역 - 클래스, 전역 변수
         # 힙 영역 - 객체
         # 스택 영역 - 지역 변수, 매개 변수
 
@@ -261,3 +263,6 @@
         # >> 4300756096
         #    4343243648
         #    [5, 1, 2]
+
+# immutable: int, string, tuple, bool
+# mutable: list, dict, set
