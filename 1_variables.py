@@ -48,6 +48,8 @@
 
     #    world
 
+# * --> all을 의미 (곱하기 외에도 다른 의미가 있음!)
+
 # \n 또는 \t - 이스케이프문을 활용한 줄바꿈
     # 이스케이프문이란 \n (줄바꿈) 또는 \t (tap키) 등의 특수기호를 말한다.
     # a = "hello\nworld"
@@ -189,11 +191,10 @@
 # print("ID는 " + myId + "이고 " + "비밀번호는 " + myPw + "입니다.")
 
 # 문자열 대체
-    # st.replace()
-a = "I studied python."
-print(a.replace("python", "java"))
-print(a)
-# >> I studied java.
+    # st.replace() 수정 안하고 불러오기만 함
+        # a = "I studied python."
+        # print(a.replace("python", "java"))
+        # >> I studied java.
 
 # 문자열 쪼개기
     # st.split() - 공백을 기준으로 문자를 자름

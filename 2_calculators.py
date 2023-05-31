@@ -32,3 +32,30 @@ import math
 print(math.pow(2,10))
 # 1024의 제곱근을 구하라
 print(math.sqrt(1024))
+
+# 확률조합 (num1) Combinations of (num2)
+    # (num1)C(num2) --> (num1)! / (num2)! * (num1-num2)!
+    # 5! = 5*4*3*2*1
+    # 3! = 3*2*1
+    # 예시 문제:
+        # 머쓱이는 구슬을 친구들에게 나누어주려고 합니다. 구슬은 모두 다르게 생겼습니다. 
+        # 머쓱이가 갖고 있는 구슬의 개수 balls와 친구들에게 나누어 줄 구슬 개수 share이 매개변수로 주어질 때, 
+        # balls개의 구슬 중 share개의 구슬을 고르는 가능한 모든 경우의 수를 return 하는 solution 함수를 완성해주세요.
+            # 입출력 예
+                # balls = 3; share = 2; result = 3
+                # balls = 5; share = 3; result = 10
+        # <Note> balls! / share! * (balls - share)!
+            # num1 = 1
+            # num2 = 1
+            # num3 = 1
+            # for a in range(1,(balls+1)):
+            #     num1 *= a
+            #     print("base is:", num1)
+            # for b in range(1, (share+1)):
+            #     num2 *= b
+            #     print("share is:", num2)
+            # for c in range(1, (balls - share + 1)):
+            #     num3 *= c
+            #     print("remainder is:", num3)
+            # answer = num1/(num2*num3)
+            # print(int(answer))

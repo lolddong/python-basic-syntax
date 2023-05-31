@@ -48,6 +48,8 @@
         #     for a in range(len(lista)):
         #         if lista[a] == num:
         #             result = a
+                            # break 할 필요 없이, 바로 return을 해도 된다. (if문의 종속문으로)
+                            # return을 하게 되면 함수 전체가 강제종료 된다.
         #             break 
         #     return result
         # print(myIndex([1, 2, 9, 4], 9))
@@ -259,12 +261,3 @@
         # >> 4300756096
         #    4343243648
         #    [5, 1, 2]
-
-# 람다함수
-    # lambda x: 실행문
-    # 사용이유: 함수 간단화하기 위해 함수를 변수에 담기 위한 방식
-def add(a, b):
-    return a + b
-
-add_lambda = lambda a, b : a + b
-print(add_lambda(1, 2))
