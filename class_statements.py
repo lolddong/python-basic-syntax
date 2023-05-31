@@ -180,7 +180,7 @@ class CalculatorChild(Calculator):      # CalculatorChild는 Calculator의 모�
 class CalculatorChild(Calculator):
     def divide(self, a):
         self.result /= a
-    def multiply(self, a):              # 부모한테 있는 기능을 재선언하게 되면, 부모의 기능보다 자싱의 기능이 우선시되고 이를 overriding이라 한다 (__init__ 도 overriding 하면 됨)
+    def multiply(self, a):              # 부모한테 있는 기능을 재선언하게 되면, 부모의 기능보다 자싱의 기능이 우선시되고 이를 overriding(재정의)이라 한다 (__init__ 도 overriding 하면 됨)
         self.result *= (a+1)            # overloading이라는 개념도 다른 언어에는 있는데 파이썬에서는 기본구성에 있지 않다
 
 if __name__ == "__main__":              # 자신이 실행 할 때에는 자신이 main이니까 실행, 그러나 다른 코드에서 사용할 때에는 이 if 아래에 있는 코드를 사용하지 않는다
