@@ -189,6 +189,7 @@
             # sta1 = "hello world python" 
             # print(sta1.split())
             # >> ['hello', 'world', 'python']
+
 # 최대값/최소값 구하기
     # 최대값
         # for문으로 구하기
@@ -228,6 +229,7 @@
             # lista.sort()
             # print(lista[0])
             # >> 5
+
 # list 만들기
     # list comprehension - 장점: 간결하다
         # lista = [변수 for 변수 in range(숫자)]

@@ -237,3 +237,12 @@
 # word3 = input("세번째 단어를 입력해주세요.")
 # print(word1[0] + word2[0] + word3[0]) 
 # >> Korea, Busan, Kangnam 라고 입력했을 때 >> KBK
+
+
+# 2진수
+    # bin(int) - 10진수 int을 2진수 문자열로 변환
+        # print(bin(2))
+        # >> 0b10
+    # int('2진수 문자열', 2) - 2진수 문자열을 10진수 문자열로 변환
+
+print(int('10', 2))
