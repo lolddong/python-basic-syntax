@@ -24,46 +24,48 @@
 
 # # r mode
 
-f = open("test.txt", "r", encoding="UTF-8") 
-line = f.readline()                                           # f.readline() - 첫번째 줄만 가져오는 함수
-print(line)
-f.close
+# f = open("test.txt", "r", encoding="UTF-8") 
+# line = f.readline()                                           # f.readline() - 첫번째 줄만 가져오는 함수
+# print(line)
+# f.close
 
-# # while, if문, readline으로 전체 출력
-#     # 방법 1
-#         # f = open("test.txt", "r", encoding="UTF-8") 
-#         # line = f.readline
-#         # while line:                     
-#         #     print(line)
-#         #     line = f.readline()    
-#         # f.close
-#     # 방법 2
-#         # f = open("test.txt", "r", encoding="UTF-8") 
-#         # while True: 
-#         #     line = f.readline()
-#         #     print(line)
-#         #     if not line:
-#         #         break
-#         # f.close
 
-#         # f = open("test.txt", "r", encoding="UTF-8") 
-#         # lines = f.readlines()                                 # f.readlines() - 데이터를 리스트형태로 라인별로 담아준다
-#         # print(lines)
-#         # >> ['0번째 줄입니다.\n', '1번째 줄입니다.\n', '2번째 줄입니다.\n', '3번째 줄입니다.\n', '4번째 줄입니다.\n', '5번째 줄입니다.\n', '6번째 줄입니다.\n', '7번째 줄입니다.\n', '8번째 줄입니다.\n', '9번째 줄입니다.\n']
 
-#         # f = open("test.txt", "r", encoding="UTF-8") 
-#         # lines = f.read()                                      # f.read() - 데이터를 한꺼번에 문자열 형태로 담아준다
-#         # print(lines)
-#         # >> 0번째 줄입니다.
-#         #    1번째 줄입니다.
-#         #    2번째 줄입니다.
-#         #    3번째 줄입니다.
-#         #    4번째 줄입니다.
-#         #    5번째 줄입니다.
-#         #    6번째 줄입니다.
-#         #    7번째 줄입니다.
-#         #    8번째 줄입니다.
-#         #    9번째 줄입니다.
+# while, if문, readline으로 전체 출력
+    # 방법 1
+        # f = open("test.txt", "r", encoding="UTF-8") 
+        # line = f.readline
+        # while line:                     
+        #     print(line)
+        #     line = f.readline()    
+        # f.close
+    # 방법 2
+        # f = open("test.txt", "r", encoding="UTF-8") 
+        # while True: 
+        #     line = f.readline()
+        #     print(line)
+        #     if not line:
+        #         break
+        # f.close
+
+        # f = open("test.txt", "r", encoding="UTF-8") 
+        # lines = f.readlines()                                 # f.readlines() - 데이터를 리스트형태로 라인별로 담아준다
+        # print(lines)
+        # >> ['0번째 줄입니다.\n', '1번째 줄입니다.\n', '2번째 줄입니다.\n', '3번째 줄입니다.\n', '4번째 줄입니다.\n', '5번째 줄입니다.\n', '6번째 줄입니다.\n', '7번째 줄입니다.\n', '8번째 줄입니다.\n', '9번째 줄입니다.\n']
+
+        # f = open("test.txt", "r", encoding="UTF-8") 
+        # lines = f.read()                                      # f.read() - 데이터를 한꺼번에 문자열 형태로 담아준다
+        # print(lines)
+        # >> 0번째 줄입니다.
+        #    1번째 줄입니다.
+        #    2번째 줄입니다.
+        #    3번째 줄입니다.
+        #    4번째 줄입니다.
+        #    5번째 줄입니다.
+        #    6번째 줄입니다.
+        #    7번째 줄입니다.
+        #    8번째 줄입니다.
+        #    9번째 줄입니다.
 
 
 
@@ -147,3 +149,32 @@ f.close
 #         print("예외입니다.")
 # searchDir = '/Users/dayoonz/Desktop/안다윤'
 # searchRecur(searchDir)
+
+
+
+
+
+
+
+# 개인 연습
+# tips.csv의 정보를 갖고 tips_copy.csv를 만들어서 tips_percentage정도 추가하기
+
+
+fr= open("tips.csv", "r", encoding="UTF-8")
+lines = fr.readlines()                                 # f.readlines() - 데이터를 리스트형태로 라인별로 담아준다
+fr.close()
+
+rw= open("tips_copy.csv", "w", encoding="UTF-8")
+lista = []
+listb = []
+rw.write(lines[0])
+for a in range(1, 245):
+    lista.append(lines[a])
+for b in lista:
+    listb.append(b.split(','))
+for a in listb:
+    a[-1] = a[-1].replace('\n','')
+    a.append(str(float(a[1])/float(a[0])*100)+"%\n")
+    a = ','.join(a)
+    rw.write(a)
+rw.close()
