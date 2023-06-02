@@ -81,7 +81,7 @@ tip_by_gender = csv_data.groupby('gender')['tip'].agg(['mean', 'std']).reset_ind
                                                                                                   # # .agg():집계함수 ; mean:평균 ; std:표준편차
 tip_by_day = csv_data.groupby('day')['tip'].agg(['mean', 'std']).reset_index() 
 seaborn.barplot(x='gender', y='mean', data=tip_by_gender, yerr=tip_by_gender['mean'], capsize = 0.1)
-# seaborn.despine()                                               # .despine() 테두리 없애주는 함수
+seaborn.despine()                                               # .despine() 테두리 없애주는 함수
 pyplot.title('average tip per gender')
 pyplot.xlabel('gender')
 pyplot.ylabel('average tip (%)')

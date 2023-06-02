@@ -29,14 +29,7 @@
             #     indexTemp += 1
             # print(lista)
 
-# range 문법
-    # range(x, y) - x 이상 y 미만의 숫자를 담은 객체
-    # range(y) - 0 이상 y 미만의 숫자를 담은 객체
-    # iterable한 객체 -> list로 변환 가능
-    # range를 list로 바꾸기 - list()
-        # v1 = list(range(1, 5))
-        # print(v1)
-        # >> [1, 2, 3, 4]
+
 
 # 연습 문제
     # for a in list를 써서 v1의 값 모두 출력

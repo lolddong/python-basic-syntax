@@ -244,5 +244,14 @@
         # print(bin(2))
         # >> 0b10
     # int('2진수 문자열', 2) - 2진수 문자열을 10진수 문자열로 변환
+        # print(int('10', 2))
+        # >> 2
 
-print(int('10', 2))
+# range 문법
+    # range(x, y) - x 이상 y 미만의 숫자를 담은 객체
+    # range(y) - 0 이상 y 미만의 숫자를 담은 객체
+    # iterable한 객체 -> list로 변환 가능
+    # range를 list로 바꾸기 - list()
+        # v1 = list(range(1, 5))
+        # print(v1)
+        # >> [1, 2, 3, 4]
