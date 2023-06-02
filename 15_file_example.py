@@ -24,10 +24,10 @@
 
 # # r mode
 
-# f = open("test.txt", "r", encoding="UTF-8") 
-# line = f.readline()                                           # f.readline() - 첫번째 줄만 가져오는 함수
-# print(line)
-# f.close
+f = open("test.txt", "r", encoding="UTF-8") 
+line = f.readline()                                           # f.readline() - 첫번째 줄만 가져오는 함수
+print(line)
+f.close
 
 # # while, if문, readline으로 전체 출력
 #     # 방법 1
