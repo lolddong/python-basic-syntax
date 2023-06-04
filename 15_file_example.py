@@ -158,23 +158,23 @@
 
 # 개인 연습
 # tips.csv의 정보를 갖고 tips_copy.csv를 만들어서 tips_percentage정도 추가하기
+    # fr= open("tips.csv", "r", encoding="UTF-8")
+    # lines = fr.readlines()                                 # f.readlines() - 데이터를 리스트형태로 라인별로 담아준다
+    # fr.close()
 
+    # rw= open("tips_copy.csv", "w", encoding="UTF-8")
+    # lista = []
+    # listb = []
+    # rw.write(lines[0])
+    # for a in range(1, 245):
+    #     lista.append(lines[a])
+    # for b in lista:
+    #     listb.append(b.split(','))
+    # for a in listb:
+    #     a[-1] = a[-1].replace('\n','')
+    #     tips_percentage = round((float(a[1])/float(a[0])*100), 1)
+    #     a.append(str(tips_percentage)+"%\n")
+    #     a = ','.join(a)
+    #     rw.write(a)
+    # rw.close()
 
-fr= open("tips.csv", "r", encoding="UTF-8")
-lines = fr.readlines()                                 # f.readlines() - 데이터를 리스트형태로 라인별로 담아준다
-fr.close()
-
-rw= open("tips_copy.csv", "w", encoding="UTF-8")
-lista = []
-listb = []
-rw.write(lines[0])
-for a in range(1, 245):
-    lista.append(lines[a])
-for b in lista:
-    listb.append(b.split(','))
-for a in listb:
-    a[-1] = a[-1].replace('\n','')
-    a.append(str(float(a[1])/float(a[0])*100)+"%\n")
-    a = ','.join(a)
-    rw.write(a)
-rw.close()
