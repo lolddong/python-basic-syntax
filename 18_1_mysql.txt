@@ -87,6 +87,12 @@ SQL 명령어
         - WHERE ~
             - WHERE 컬럼명 > 컬럼값
             - WHERE 컬럼명 = 컬럼값
+    - SELECT 시 중복되는 값 제거
+        - SELECT DISTINCT 컬럼값 FROM 테이블명;
+    - 선택한 결과의 정렬
+        - SELECT 문으로 선택한 결과를 ORDER BY 절을 사용하여 정렬
+        - 기본 서정은 오름차순이며, ASC 
+        - 여러 컬럼의 데이터를 쉼표(,)를 사용하여 
 
 용어
     - table의 구조
@@ -131,7 +137,6 @@ SQL 명령어
         - 예) # select * from author
               select * from author where id >= 3 AND name = 'hong';
               >> 두번째 줄만 실행됨
-    - ㄴㄷ
 
 mysql 연산자
     - mysql에서는 ==이 없음

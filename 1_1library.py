@@ -1,3 +1,13 @@
+import math
+# 위는 math라는 라이브러리를 선언하는 것
+# pow(a,b) - 2의 10제곱
+    # print(math.pow(2,10))
+# sqrt(a) - 1024의 제곱근을 구하라
+    # print(math.sqrt(1024))
+
+
+
+
 
 import requests
 from bs4 import BeautifulSoup
@@ -9,6 +19,14 @@ from bs4 import BeautifulSoup
 
 # tag 정보를 갖고 html_response에서 원하는 정보 추출
 
+
+
+
+# 코인시세 10초에 한번씩 db insert
+import time
+while True:
+    print("hello world")
+    time.sleep(10)
 
 
 
@@ -67,5 +85,3 @@ cursor.execute(add_data, data)
 connector.commit()
 cursor.close()
 connector.close()
-
-
