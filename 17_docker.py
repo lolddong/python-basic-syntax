@@ -49,9 +49,6 @@
 
 
 
-
-
-
 # docker 접속!
     # 1) docker ps -a
     # 2) docker exec -it 컨테이너명 /bin/bash
