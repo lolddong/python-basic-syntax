@@ -27,7 +27,7 @@
         #     2번 무한반복
         #     3번 무한반복
         #     4번 무한반복
-    # .pop()
+    # .pop()   --> 원래 리스트 수정 (str, tuple, dict 안 됨)
         # listA = [1, 2, 3]
         # while listA:
         #    print("참입니다.")
@@ -39,9 +39,10 @@
         # if문을 써서 어떠한 조건에 break
 # continue - 이 구문을 만나면, 다시 반복문 조건으로 이동
 
+
 # 랜덤의 값을 추출하는 파이썬 라이브러리 -> random
     # import random
-    # print(random.randint(1, 45))
+    # print(random.randint(1, 45))   --> 1이상 45 이하
     # >> 26
 
 # 연습 문제
@@ -69,14 +70,23 @@
         # print(sum)
         # >> 500500
     # 1-1000 중 홀수만 더해서 출력
-        # a = 0
-        # sum = 0
-        # while a < 1000:
-        #     a += 1
-        #     if a%2 != 0:
-        #         sum += a
-        # print(sum)
-        # >> 250000
+        # 방법 1
+            # a = 0
+            # sum = 0
+            # while a < 1000:
+            #     a += 1
+            #     if a%2 != 0:
+            #         sum += a
+            # print(sum)
+            # >> 250000
+        # 방법 2
+            # lista = []
+            # for a in range(1, 1001):
+            #     lista.append(a)
+            # for a in range(len(lista)):
+            #     answer = sum(lista[::2])
+            # print(answer)
+            # >> 250000
     # 위 문제를 continue 활영해서 출력
         # sum = 0
         # a = 0
@@ -150,6 +160,8 @@
             # print(list)
 # 최대값, 최소값 구하기
     # 1-100의 정수 중 10개를 뽑아 리스트로 담고 최대값과 최소값을 구하라
+
+
         # import random
         # lista = []
         # while len(lista) < 10:
@@ -158,7 +170,6 @@
         # max = lista[-1]
         # min = lista[0]
         # print(f"Random numbers are {lista}, and the maximum number is {max} while the minimum is {min}.")
-
 
 # continue
 # break

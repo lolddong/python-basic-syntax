@@ -3,3 +3,7 @@ git hub
 - git hub에 새 repository 만들기
 - 터미널에 다음과 같이 입력하기
     - git clone URL
+
+- git add .
+- git commit -m "문자열"
+- git push origin main

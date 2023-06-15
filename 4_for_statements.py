@@ -125,7 +125,6 @@
         # lista[0] = listb[1]
         # lista[1] = listb[0]
         # print(lista)
-# print(lista)
     # 방법 2
         # lista = [10, 20, 30, 40]
         # temp = lista[0]
@@ -135,6 +134,7 @@
     # 파이썬에서 지원하고 있는 문법
         # lista[0], lista[1] = lista[1], lista[0]
         # print(lista)
+
 # for문을 이용한 정렬 알고리즘
     # 리스트를 오름차순으로 정렬 - lista = [93, 45, 21, 30, 20, 94, 66, 71, 45]
         # .sort()
@@ -152,17 +152,17 @@
                 # print(lista)
                 # >> [20, 21, 30, 45, 45, 66, 71, 93, 94]
             # 버블정렬 bubble-sort
-lista = [93, 45, 21, 30, 20, 94, 66, 71, 45]
-a = 0
+    # lista = [93, 45, 21, 30, 20, 94, 66, 71, 45]
+    # a = 0
 
-for a in range(len(lista)-1):
-    print(lista)
-    for b in range(a+1, len(lista)):
-        if lista[a] > lista[b]:
-            lista[a], lista[b] = lista[b], lista[a]
-            a += 1
-            print(lista)
-        else:
-            a = 0
+    # for a in range(len(lista)-1):
+    #     print(lista)
+    #     for b in range(a+1, len(lista)):
+    #         if lista[a] > lista[b]:
+    #             lista[a], lista[b] = lista[b], lista[a]
+    #             a += 1
+    #             print(lista)
+    #         else:
+    #             a = 0
 
-print("finale:", lista)
+    # print("finale:", lista)

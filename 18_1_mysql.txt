@@ -4,7 +4,7 @@
     - 예) Oracle, mysql, postgres
     - mysql database server의 계층 구조
         - mysql database server > 스키마 n개 > 테이블 n개
-    - CRUD: 추가, 조회, 수정, 삭제를 의미하는 IT 전반의 용어
+    - CRUD: 추가, 조회, 수정, 삭제를 의미하는 IT 전반의 용어 (create, read, update, delete)
 
 IP 프로토콜의 한계
     - 패킷을 받을 대상서버가 불능이거나, 중간에 패킷이 소실될 수가 있음 (비연결성)
@@ -26,7 +26,7 @@ docker 컨테이너 내부로 접속
     - -u : user
     - -p : password
 
-
+docker exec -it board_mysql mysql -u root -p
 
 Database에 index (면접 때 많이 물어봄 - index에 아는 것에 대하여 설명해보세요)
     - 검색의 효율성, 색인(목차), B-Tree 자료구조 
@@ -579,3 +579,8 @@ insert into codingtest (writer_id, price, status) values ('miyeon89', 1500, 'DON
   HAVING COUNT(*) > 1
   ORDER BY NAME ASC;
 
+
+Docker
+마이그레이션
+- python3 manage.py makemigrations --> DDL문생성
+- python3 manage.py migrate --> DDL문 생성 후 반영

@@ -13,13 +13,13 @@
 # 자료의 형변환
     # a = 10
     # b = 20
-# 결과값이 1020이 나오도록 덧셈을 하여라
-    # print(str(a) + str(b))
+    # 결과값이 1020이 나오도록 덧셈을 하여라
+        # print(str(a) + str(b))
     # c = 2.333333
     # d = 5/4
-# c와 d의 소수부분을 잘라서 출력하라
-    # print(int(c))
-    # print(int(d))
+    # c와 d의 소수부분을 잘라서 출력하라
+        # print(int(c))
+        # print(int(d))
 
 # 제곱, 제곱근
 # 2의 10 제곱을 출력하라
@@ -62,7 +62,7 @@
 
 
 
-while True:
-    gugu = int(input('please enter number: '))
-    for a in range(1, 10):
-        print(f"{gugu} X {a} = {gugu*a}")
+# while True:
+#     gugu = int(input('please enter number: '))
+#     for a in range(1, 10):
+#         print(f"{gugu} X {a} = {gugu*a}")

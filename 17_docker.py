@@ -54,6 +54,9 @@
     # 2) docker exec -it 컨테이너명 /bin/bash
 
 
+# makemigrations 와 migrate
+    # python3 manage.py makemigrations --> DDL문 생성
+    # python3 manage.py migrate --> DDL문 생성 후 반영   
 
 
 

@@ -141,8 +141,9 @@
         # lista.extend(listb)
         # print(lista)
         # >> [1, 2, 3, 10, 20, 30]
+
 # list 정렬
-    # lst명.sort() - 오름차순 정렬 - 숫자, 영어, 한국어 다 됨
+    # lst명.sort() - 오름차순 정렬 - 숫자, 영어, 한국어 다 됨 -> 수정
         # numa = [1, 10, 2, 5, 7, 4]
         # numa.sort()
         # print(numa)
@@ -172,6 +173,7 @@
         # >> 7
         # print(lista)
         # >> [1, 2, 3, 4, 5, 6]
+
 # list <-> 문자열 만들기
     # 문자 list를 문자열로 만들기
         # str.join(list)
@@ -236,8 +238,7 @@
             # 예)
                 # lista = [a*2 for a in range(10)]
                 # print(lista)
-                # >>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
+                # >>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
     # (lista에 0-9까지 담는 방법)
         # 방법 1 - 노가다
             # lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -256,11 +257,22 @@
             # print(lista)
             # >> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     # range(0, 10)에서 홀수값만 2배 한 값만을 담은 리스트를 출력
-        # lista = []
-        # for a in range(10):
-        #     if a%2 != 0:
-        #         lista.append(a*2)
-        # print(lista)
-    # list comprehension 사용하기
-        # lista = [a*2 for a in range(10) if a % 2 != 0]
-        # print(lista)
+        # for문
+            # lista = []
+            # for a in range(10):
+            #     if a%2 != 0:
+            #         lista.append(a*2)
+            # print(lista)
+            # >> [2, 6, 10, 14, 18]
+        # list comprehension 사용하기
+            # lista = [a*2 for a in range(10) if a % 2 != 0]
+            # print(lista)
+            # >> [2, 6, 10, 14, 18]
+        # index
+            # lista = list(range(10))
+            # listb = lista[1:11:2]
+            # listc = []
+            # for a in listb:
+            #     listc.append(a*2)
+            # print(listc)
+            # >> [2, 6, 10, 14, 18]

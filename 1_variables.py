@@ -54,6 +54,7 @@
 
 # * --> all을 의미 (곱하기 외에도 다른 의미가 있음!)
 
+
 # \n 또는 \t - 이스케이프문을 활용한 줄바꿈
     # 이스케이프문이란 \n (줄바꿈) 또는 \t (tap키) 등의 특수기호를 말한다.
     # a = "hello\nworld"
@@ -99,6 +100,7 @@
         # b = a[0:6]
         # print(b)
         # >> python
+
     # x, y 자리에 값이 없으면 처음부터 또는 끝까지를 의미
         # a = "python is fun"
         # 6번째 문자부터 끝까지 잘라내서 변수 b에 담아 출력
@@ -150,10 +152,12 @@
         # print(a)
 
 # 문자열 세기
-    # st.count('o') - 대상 문자열에 지정한 문자가 몇개가 있는지 출력하는 함수
+    # st.count('o') - 대상 문자열/리스트/튜플에 지정한 문자가 몇개가 있는지 출력하는 함수
         # a = "python"
         # print(a.count('o'))
         # >> 1
+    # set이랑 dict는 카운트 못함
+
 # 문자열 순서 찾기
     # st.find('o') st.index('o') - 대상 문자열에 지정한 문자가 몇 번째 index에 있는지 출력하는 함수
         # a = "python"
@@ -201,7 +205,7 @@
         # >> I studied java.
 
 # 문자열 쪼개기
-    # st.split() - 공백을 기준으로 문자를 자름
+    # st.split() - 공백을 기준으로 문자를 잘라서 리스트에 넣음
         # a = "I studied python."
         # b = a.split()
         # print(b)
@@ -209,7 +213,7 @@
         # a = "I     studied      python."
         # b = a.split()
         # >> ['I', 'studied', 'python.']
-    # st.split(':') - ':'을 기준으로 문자를 자름
+    # st.split(':') - ':'을 기준으로 문자를 잘라서 리스트에 넣음
         # a = "I:studied:python."
         # b = a.split(":")
         # print(b) 
@@ -259,4 +263,7 @@
         # v1 = list(range(1, 5))
         # print(v1)
         # >> [1, 2, 3, 4]
-
+    # 이 때, range 안에 있느 값은 int
+        # for a in range(1):
+            # print(type(a))
+            # >> <class 'int'>
