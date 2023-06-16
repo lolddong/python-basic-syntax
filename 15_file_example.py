@@ -29,6 +29,16 @@
 # print(line)
 # f.close
 
+# with ... as f: 은 나중에 안 닫아도 된다(f.close 필요 없)
+
+# with open("test.txt", "r", encoding = "utf-8") as f:
+    # f.write(Hello World\n")
+    # f.write(Hello World\n")
+    # f.write(Hello World\n")
+    # f.write(Hello World\n")
+
+
+
 
 
 # while, if문, readline으로 전체 출력
